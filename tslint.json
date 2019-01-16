@@ -5,33 +5,37 @@
     ],
     "jsRules": {},
     "rules": {
+        "max-classes-per-file": false,
         "adjacent-overload-signatures": true,
         "ban-ts-ignore": false,
         "member-ordering": [
             true,
             {
                 "order": [
-                    "constructor",
                     "public-static-field",
-                    "public-static-method",
                     "protected-static-field",
-                    "protected-static-method",
                     "private-static-field",
+                    "public-static-method",
+                    "protected-static-method",
                     "private-static-method",
                     "public-instance-field",
-                    "public-instance-method",
                     "protected-instance-field",
-                    "protected-instance-method",
                     "private-instance-field",
+                    "public-constructor",
+                    "protected-constructor",
+                    "private-constructor",
+                    "public-instance-method",
+                    "protected-instance-method",
                     "private-instance-method"
                 ]
             }
         ],
+        "object-literal-sort-keys": false,
         "only-arrow-functions": {
             "options": ["allow-declarations", "allow-named-functions"]
         },
-        "no-inferrable-types": true,
-        "no-magic-numbers": [true, -1, 0, 1],
+        "no-inferrable-types": [true, "ignore-params"],
+        "no-magic-numbers": false,
         "no-parameter-reassignment": true,
         "no-shadowed-variable": [true,
             {
@@ -48,6 +52,7 @@
         "promise-function-async": true,
         "quotemark": [true, "single"],
         "space-before-function-paren": true,
+        "trailing-comma": false,
         "typedef": [true,
             "parameter",
             "arrow-parameter",
