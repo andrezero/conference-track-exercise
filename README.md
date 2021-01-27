@@ -1,18 +1,10 @@
-# Node.js boilerplate - Typescript + Mocha + Nyc
+# Conference-track-exercise 
 
-> Because finally, we can
+> Design patterns exercise.
 
-Result of a quick research on how to get Typescript code to test in Node.js with accurate code coverage reports and debugger.
+Back at thoughtworks in 2018 we held a weekly software design patterns workshop. Kudos to the great engineers driving this activity. Good memories.
 
-Uses:
-- [ts-node](https://www.npmjs.com/package/ts-node)
-- [mocha](https://github.com/mochajs/mocha)
-- [chai](https://github.com/chaijs/chai)
-- [nyc](https://github.com/istanbuljs/nyc)
-
-Includes:
-- VSCode launcher
-
+Based on [andrezero/boilerplate-ts-nyc-mocha](https://github.com/andrezero/boilerplate-ts-nyc-mocha)
 
 ## Getting started
 
@@ -22,21 +14,6 @@ npm install
 npm run build
 npm run coverage
 ```
-
-
-## What makes it work
-
-- the `--require "ts-node/register"` argument, when running `_mocha`
-- the `"require": ["ts-node/register"]` setting, in `.nycrc`
-- the type declaration dependencies, such as `@types/sinon-chai`
-
-## Kudos
-
-Kudos:
-- [Philip Beels boilerplate](https://github.com/philipbeel/example-typescript-nyc-mocha-coverage)
-- [all the people trying hard out there, especially on stackoverflow](https://www.google.es/search?q=nodejs+nyc+mocha+typescript)
-- [Unit testing node applications with TypeScript — using mocha and chai](https://journal.artfuldev.com/unit-testing-node-applications-with-typescript-using-mocha-and-chai-384ef05f32b2)
-- [Continuous Integration with TypeScript + Mocha + Istanbul (NYC) + CircleCI](https://hcoelho.com/blog/60/Continuous_Integration_with_TypeScript_+_Mocha_+_Istanbul_(NYC)_+_CircleCI)
 
 
 ## [MIT License](LICENSE-MIT)
